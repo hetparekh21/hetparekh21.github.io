@@ -1,0 +1,22 @@
+<html>
+
+  <head>
+  <script>
+
+if (navigator.geolocation) { // device can return its location
+    navigator.geolocation.getCurrentPosition(function(position) {
+        document.getElementById("lat").innerHTML = position.coords.latitude;
+        document.getElementById("long").innerHTML = position.coords.longitude;
+         console.log(position.coords.latitude);
+         console.log(position.coords.longitude);
+    });
+}
+
+</script>
+  </head>
+  
+  
+<h1 id="lat"></h1>
+<h1 id="long"></h1>
+
+</html>
